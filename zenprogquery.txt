@@ -1,0 +1,17 @@
+1.Find all the topics and tasks which are thought in the month of October
+db.tasks.aggregate([{$match:{task:{$gte:ISODate("2020-10-01"),$lte:ISODate("2020-10-31")}}},{$project:{_id:0,taskName:1}}])
+
+2.Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+db.company_drives.aggregate([{$match:{appearedOn:{$gte:ISODate("2020-10-15"),$lte:ISODate("2020-10-31")}}},{$project:{_id:0,companyName:1}}])
+
+3.Find all the company drives and students who are appeared for the placement.
+db.company_drives.aggregate([{$lookup:{from:"users",localField:'appearedIds',foreignField:'zenId',as:'student'}},{$project:{_id:0,companyName:1,students:1}}])
+
+4.Find the number of problems solved by the user in codekata
+ db.users.aggregate([{$lookup:{from:'codekata',localField:'zenId',foreignField:'zenId',as:'a'}},{$project:{_id:0,name:1,a:1}}])
+
+5.Find all the mentors with who has the mentee's count more than 15
+db.mentors.aggregate([{$project:{mentorName:1,mentees:{$cond:{if:{$isArray:"$menteesId"},then:{$size:"$menteesId"},else:"NA"}}}}])
+
+6.Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+db.attendance.aggregate([{$match:{$nor:[{date:{$gte:ISODate("2020-10-15"),$lte:ISODate("2020-10-31")}}]}},{$project:{_id:0,zenId:1}}])

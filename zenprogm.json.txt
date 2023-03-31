@@ -1,0 +1,236 @@
+users:
+[
+  {
+    _id: ObjectId("6425972059739efe06194204"),
+    name: 'Yadhavagiri',
+    course: 'FullStack',
+    zenId: 1
+  },
+  {
+    _id: ObjectId("6425972059739efe06194205"),
+    name: 'Arun',
+    course: 'FullStack',
+    zenId: 2
+  },
+  {
+    _id: ObjectId("6425972059739efe06194206"),
+    name: 'Balaji',
+    course: 'FullStack',
+    zenId: 3
+  },
+  {
+    _id: ObjectId("6425972059739efe06194207"),
+    name: 'Chandran',
+    course: 'FullStack',
+    zenId: 4
+  },
+  {
+    _id: ObjectId("6425972059739efe06194208"),
+    name: 'David',
+    course: 'FullStack',
+    zenId: 5
+  }
+]
+
+codekata
+[
+  {
+    _id: ObjectId("64259ffb59739efe06194209"),
+    zenId: 1,
+    problem_solved: 200
+  },
+  {
+    _id: ObjectId("64259ffb59739efe0619420a"),
+    zenId: 2,
+    problem_solved: 300
+  },
+  {
+    _id: ObjectId("64259ffb59739efe0619420b"),
+    zenId: 3,
+    problem_solved: 250
+  },
+  {
+    _id: ObjectId("64259ffb59739efe0619420c"),
+    zenId: 4,
+    problem_solved: 100
+  },
+  {
+    _id: ObjectId("64259ffb59739efe0619420d"),
+    zenId: 5,
+    problem_solved: 150
+  }
+]
+
+attendance
+[
+  {
+    _id: ObjectId("6425b7a259739efe06194210"),
+    zenId: 1,
+    date: [
+      ISODate("2020-09-21T18:30:00.000Z"),
+      ISODate("2020-09-27T18:30:00.000Z"),
+      ISODate("2020-09-28T18:30:00.000Z"),
+      ISODate("2020-10-15T00:00:00.000Z"),
+      ISODate("2020-10-16T00:00:00.000Z"),
+      ISODate("2020-10-22T00:00:00.000Z"),
+      ISODate("2020-10-23T00:00:00.000Z"),
+      ISODate("2020-10-29T00:00:00.000Z"),
+      ISODate("2020-10-30T00:00:00.000Z")
+    ]
+  },
+  {
+    _id: ObjectId("6425b7a259739efe06194211"),
+    zenId: 2,
+    date: [
+      ISODate("2020-09-21T18:30:00.000Z"),
+      ISODate("2020-09-28T18:30:00.000Z"),
+      ISODate("2020-10-15T00:00:00.000Z"),
+      ISODate("2020-10-22T00:00:00.000Z"),
+      ISODate("2020-10-30T00:00:00.000Z")
+    ]
+  },
+  {
+    _id: ObjectId("6425b7a259739efe06194212"),
+    zenId: 3,
+    date: [
+      ISODate("2020-09-21T18:30:00.000Z"),
+      ISODate("2020-09-27T18:30:00.000Z"),
+      ISODate("2020-09-28T18:30:00.000Z")
+    ]
+  },
+  {
+    _id: ObjectId("6425b7a259739efe06194213"),
+    zenId: 4,
+    date: [
+      ISODate("2020-09-21T18:30:00.000Z"),
+      ISODate("2020-09-28T18:30:00.000Z"),
+      ISODate("2020-10-15T00:00:00.000Z"),
+      ISODate("2020-10-16T00:00:00.000Z"),
+      ISODate("2020-10-29T00:00:00.000Z"),
+      ISODate("2020-10-30T00:00:00.000Z")
+    ]
+  },
+  {
+    _id: ObjectId("6425b7a259739efe06194214"),
+    zenId: 5,
+    date: [
+      ISODate("2020-09-21T18:30:00.000Z"),
+      ISODate("2020-09-27T18:30:00.000Z"),
+      ISODate("2020-09-28T18:30:00.000Z"),
+      ISODate("2020-10-16T00:00:00.000Z"),
+      ISODate("2020-10-22T00:00:00.000Z"),
+      ISODate("2020-10-23T00:00:00.000Z"),
+      ISODate("2020-10-29T00:00:00.000Z")
+    ]
+  }
+]
+
+topics
+[
+  {
+    _id: ObjectId("6425c27f59739efe06194215"),
+    Javascript_basic: {
+      datatypes: ISODate("2020-09-20T18:30:00.000Z"),
+      loops: ISODate("2020-09-26T18:30:00.000Z"),
+      function: ISODate("2020-09-27T18:30:00.000Z")
+    }
+  },
+  {
+    _id: ObjectId("6425c27f59739efe06194216"),
+    React: {
+      states: ISODate("2020-10-15T00:00:00.000Z"),
+      Hooks: ISODate("2020-10-16T00:00:00.000Z"),
+      context: ISODate("2020-10-22T00:00:00.000Z"),
+      Routes: ISODate("2020-10-23T00:00:00.000Z"),
+      Redux: ISODate("2020-10-29T00:00:00.000Z")
+    }
+  },
+  {
+    _id: ObjectId("6425c27f59739efe06194217"),
+    database: {
+      MySQL: ISODate("2020-10-30T00:00:00.000Z"),
+      mongodb: ISODate("2020-11-04T18:30:00.000Z")
+    }
+  }
+]
+
+tasks
+[
+  {
+    _id: ObjectId("64263d42c018328481b75141"),
+    task: ISODate("2020-09-26T18:30:00.000Z"),
+    finishedIds: [ 1, 2, 3, 4, 5 ],
+    taskName: 'Javascript'
+  },
+  {
+    _id: ObjectId("64263d42c018328481b75142"),
+    task: ISODate("2020-10-15T00:00:00.000Z"),
+    finishedIds: [ 1, 2, 3, 5 ],
+    taskName: 'React State'
+  },
+  {
+    _id: ObjectId("64263d42c018328481b75143"),
+    task: ISODate("2020-10-29T00:00:00.000Z"),
+    finishedIds: [ 1, 2, 3 ],
+    taskName: 'React'
+  },
+  {
+    _id: ObjectId("64263d42c018328481b75144"),
+    task: ISODate("2020-10-30T00:00:00.000Z"),
+    finishedIds: [ 1, 2, 5 ],
+    taskName: 'MySQL'
+  },
+  {
+    _id: ObjectId("64263d42c018328481b75145"),
+    task: ISODate("2020-11-04T00:00:00.000Z"),
+    finishedIds: [ 1, 2 ],
+    taskName: 'Mongodb'
+  }
+]
+
+company_drives
+[
+  {
+    _id: ObjectId("64264c38c018328481b75146"),
+    companyName: 'TCS',
+    appearedOn: ISODate("2020-10-14T00:00:00.000Z"),
+    appearedIds: [ 2, 3, 5 ]
+  },
+  {
+    _id: ObjectId("64264c38c018328481b75147"),
+    companyName: 'Infosys',
+    appearedOn: ISODate("2020-10-25T00:00:00.000Z"),
+    appearedIds: [ 1, 2, 4, 5 ]
+  },
+  {
+    _id: ObjectId("64264c38c018328481b75148"),
+    companyName: 'HCL',
+    appearedOn: ISODate("2020-10-26T00:00:00.000Z"),
+    appearedIds: [ 1, 2, 4 ]
+  },
+  {
+    _id: ObjectId("64264c38c018328481b75149"),
+    companyName: 'Wipro',
+    appearedOn: ISODate("2020-10-29T00:00:00.000Z"),
+    appearedIds: [ 1, 3, 4 ]
+  }
+]
+
+mentors
+[
+  {
+    _id: ObjectId("64264d79c018328481b7514a"),
+    mentorName: 'Sanjay',
+    menteesId: [ 1, 2, 3, 4, 5 ]
+  },
+  {
+    _id: ObjectId("64264d79c018328481b7514b"),
+    mentorName: 'Gopi',
+    menteesId: [ 1, 3, 4, 5 ]
+  },
+  {
+    _id: ObjectId("64264d79c018328481b7514c"),
+    mentorName: 'Farooq',
+    menteesId: [ 1, 2, 4, 5 ]
+  }
+]
